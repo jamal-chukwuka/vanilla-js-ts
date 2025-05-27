@@ -5,10 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanilla JS & TS</title>
     <!-- <script src="script.js"></script> -->
-    <script src="tscript.ts"></script>
+     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
 
 </head>
 <body>
+
+    <h2>Choose an airline</h2>
+    <div class="container">
+          <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="assets/delta.jpg">
+            </div>
+            <div class="flip-card-back">
+                <img src="assets/Mexico City.jpg">
+
+                <h4>Congrats you're going to Mexico City</h4>
+                <p>What neighborhood do you want to stay in?</p>
+                <button onclick="showNeighborhoods('Mexico City')">Choose Neighborhood</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="assets/southwest.jpg">
+            </div>
+            <div class="flip-card-back">
+                <img src="assets/London.jpeg">
+
+                <h4>Congrats you're going to London</h4>
+                <p>What neighborhood do you want to stay in?</p>
+                <button onclick="showNeighborhoods('London')">Choose Neighborhood</button>
+
+            </div>
+        </div>
+    </div>
+
+        <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="assets/united.png">
+            </div>
+            <div class="flip-card-back">
+                <img src="assets/Toronto.jpg">
+                <h4>Congrats you're going to Toronto</h4>
+                <p>What neighborhood do you want to stay in?</p>
+                <button onclick="showNeighborhoods('Toronto')">Choose Neighborhood</button>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="neighborhoodModal">
+        <div class="modal-content">
+            <h3 id="modal-title">Choose a neighborhood</h3>
+            <div id="neighborhood-buttons"></div>
+            <button onclick="closeModal()">Cancel</button>
+        </div>
+    </div>
+</div>
+  
     
 </body>
 </html>
